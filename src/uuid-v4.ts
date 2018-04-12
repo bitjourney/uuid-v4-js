@@ -1,4 +1,4 @@
-import { getRandom16Bytes } from "./random";
+import { getRandom16Bytes } from "./rng";
 
 function hex(bytes: Uint8Array): string {
   let s = "";
