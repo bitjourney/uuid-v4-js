@@ -7,7 +7,7 @@
   "scripts": {
     "build": "tsc",
     "prepublishOnly": "npm run build",
-    "test": "ts-node test/*.test.ts",
+    "test": "prove --ext .test.ts --exec ts-node test/*.test.ts",
     "format": "npx prettier --write example/*.ts src/*.ts test/*.ts",
     "lint": "npx tslint --project tsconfig.json"
   },
