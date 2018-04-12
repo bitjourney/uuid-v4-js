@@ -1,0 +1,42 @@
+{
+  "name": "@bitjourney/uuid-v4",
+  "version": "1.0.0",
+  "description": "UUID v4 implementation with Web Crypto API",
+  "main": "dist/uuid-v4.js",
+  "types": "dist/uuid-v4.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "prepublishOnly": "npm run build",
+    "test": "ts-node test/*.test.ts",
+    "format": "npx prettier --write example/*.ts src/*.ts test/*.ts",
+    "lint": "npx tslint --project tsconfig.json"
+  },
+  "keywords": [
+    "UUID",
+    "rfc4122",
+    "universal"
+  ],
+  "contributors": [
+    {
+      "name": "FUJI Goro",
+      "url": "https://github.com/gfx"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bitjourney/uuid-v4-js"
+  },
+  "license": "ISC",
+  "devDependencies": {
+    "is-uuid": "^1.0.2",
+    "ts-node": ">= 5.0.1",
+    "tslint": "*",
+    "tslint-config-prettier": "*",
+    "typescript": ">= 2.8.1",
+    "uuid-validate": "0.0.2"
+  },
+  "dependencies": {
+    "tslib": "*"
+  },
+  "sideEffects": true
+}
