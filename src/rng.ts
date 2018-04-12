@@ -17,8 +17,8 @@ export const getRandomValues = (() => {
   }
 })();
 
-export function getRandom16Bytes(): Uint8Array {
-  const bytes = new Uint8Array(16);
+export function getRandomBytes(length: number): Uint8Array {
+  const bytes = new Uint8Array(length);
   getRandomValues(bytes);
   return bytes;
 };

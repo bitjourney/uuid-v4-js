@@ -1,4 +1,4 @@
-import { getRandom16Bytes } from "./rng";
+import { getRandomBytes } from "./rng";
 
 function hex(bytes: Uint8Array): string {
   let s = "";
@@ -10,7 +10,7 @@ function hex(bytes: Uint8Array): string {
 
 // https://tools.ietf.org/html/rfc4122
 export function generateUUIDv4() {
-  const bytes = getRandom16Bytes();
+  const bytes = getRandomBytes(16);
 
     // 4.1.1. Variant
     const VARIANT = 2; // "The variant specified in this document"
