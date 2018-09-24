@@ -11,7 +11,7 @@ export const getRandomValues = (() => {
   if (typeof crypto !== 'undefined') {
     return crypto.getRandomValues.bind(crypto);
   } else if (typeof msCrypto !== 'undefined') {
-    return msCrypto.getRandomValues.bind(crypto);
+    return msCrypto.getRandomValues.bind(msCrypto);
   } else {
     return getRandomValuesWithMathRandom;
   }
