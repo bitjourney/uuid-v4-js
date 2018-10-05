@@ -28,11 +28,12 @@
   },
   "license": "ISC",
   "devDependencies": {
+    "@types/is-uuid": "^1.0.0",
     "is-uuid": "^1.0.2",
     "ts-node": ">= 5.0.1",
     "tslint": "*",
     "tslint-config-prettier": "*",
-    "typescript": ">= 2.8.1",
+    "typescript": ">= 3.0.0",
     "uuid-validate": "0.0.2"
   },
   "dependencies": {
