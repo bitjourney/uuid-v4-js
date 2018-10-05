@@ -1,6 +1,6 @@
 {
   "name": "@bitjourney/uuid-v4",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "UUID v4 implementation with Web Crypto API",
   "main": "dist/uuid-v4.js",
   "types": "dist/uuid-v4.d.ts",
